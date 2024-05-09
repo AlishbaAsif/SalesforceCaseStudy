@@ -1,1 +1,1 @@
-# SalesforceCaseStudy
+This is built on a Salesforce Developer Org, where the total daily API request limit for my instance is 15,000. For example, in an Enterprise Edition org with 15 Salesforce licenses, the API request limit would be 115,000 (100,000 base requests plus 15 licenses x 1,000 requests each).
