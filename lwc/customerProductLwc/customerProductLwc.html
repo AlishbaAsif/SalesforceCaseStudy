@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Product Details" icon-name="standard:product">
+        <div class="slds-p-around_medium">
+            <template lwc:if={productInfo}>
+                <p> <strong>Product:</strong> {productInfo.productName} </p>
+                <ul>
+                    <template for:each={productInfo.childProductList} for:item="product">
+                        <li key={product.productName}>
+                            <p> <strong>{product.productName} :</strong> {product.price} </p>
+                        </li>
+                    </template>
+                </ul>
+            </template>
+            <template lwc:else>
+                <h1>No Product Information Available.</h1>
+            </template>
+        </div>
+    </lightning-card>
+</template>
